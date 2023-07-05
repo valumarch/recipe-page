@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Monserrat", sans-serif;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    justify-items: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: -20px;
+}
+
+.title{
+    font-family:  "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 48px;
+    font-size: 2rem;
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 15px;
+    width: 90vw;
+    justify-content: space-between;
+    
+}
+
+.subtitle-text{
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 500;
+    color: #4F4F4F;
+}
+
+.dots{
+    width: 20px;
+    height: auto;
+    margin-top: -4rem;
+}
+
+.cheesecake-img{
+    width: 80vw;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.recipe{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+
+.sidebar{
+    width: 70vw;
+    height: fit-content;
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar div li {
+    display: inline-block;
+}
+
+.sidebar-item span{
+    width: 34px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.faded-uppercase{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #BDBDBD;
+}
+
+.sidebar-item{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+
+.sidebar-text{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333333;
+    padding: 0.2rem;
+}
+
+
+.sidebar-text.orange{
+    color: #F2994A;
+}
+
+.ingredients, .instructions{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333333;
+    text-align: left;
+}
+
+.ingredients ul li{
+    list-style-type: none;
+}
+
+h2{
+    font-family: "Playfair Display", serif;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 1rem 0;
+    color: #333333;
+}
+
+.ingredients h3{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin: 25px 0;
+}
+
+.ingredients ul li{
+    color:#333333;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 0.5rem;
+}
+
+.checkbox{
+    margin-right: 10px;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #828282;
+    cursor: pointer;
+}
+
+div.instructions-list{
+    counter-reset: list-number;
+}
+
+div.instructions-list div{
+    counter-increment: list-number;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+div.instructions-list div:before{
+    content: counter(list-number);
+    background-color: #F2994A;
+    display: inline-flex;
+    align-items:center;
+    justify-content: center;
+    width: 36px;
+    border-radius: 6px;
+    font-family: "Playfair Display", sans-serif;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin: 10px;
+}
+
+div.instructions-list div p{
+    padding-left: 60px;
+    margin-top: -50px;
+}
+
+@media all and (min-width: 1024px) {
+    .recipe{
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    .sidebar{
+        box-shadow: 0px 0px 20px 0px #0000001A;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .sidebar-item{
+        margin: 5px;
+    }
+    .sidebar ul li{
+        display: flex;
+        flex-direction: row;
+    }
+    .dots{
+        margin-top: -2rem;
+    }
+}
