@@ -190,6 +190,17 @@ div.instructions-list div p{
     margin-top: -50px;
 }
 
+footer{
+    margin: 20px;
+    color: black;
+    opacity: 0.8;
+    font-size: 12px;
+}
+footer a{
+    font-style: none;
+    color: black;
+}
+
 @media all and (min-width: 1024px) {
     .recipe{
         flex-direction: row-reverse;
